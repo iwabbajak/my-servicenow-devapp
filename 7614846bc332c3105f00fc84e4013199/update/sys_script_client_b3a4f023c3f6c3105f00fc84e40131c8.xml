@@ -3,37 +3,40 @@
         <active>true</active>
         <applies_extended>false</applies_extended>
         <condition/>
-        <description>When incident loads perform client sctip actions</description>
-        <field/>
+        <description/>
+        <field>subcategory</field>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>JAKCS_LoadIncident</name>
+        <name>JAKCS_OnChangeIncident_Email</name>
         <order/>
-        <script><![CDATA[function onLoad() {
-	if (!g_form.isNewRecord()) {
-	return;
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	if (newValue == 'email') {
+	g_form.setValue('business_service','27d32778c0a8000b00db970eeaa60f16');
 	}
-	alert("Create New Incident" + g_user.userName);
-	g_form.setValue('caller_id',g_user.userID);
+   //Type appropriate comment here, and begin script below
+   
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-25 05:31:02</sys_created_on>
+        <sys_created_on>2026-08-25 06:56:28</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>5701a0a7c336c3105f00fc84e40131f6</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>JAKCS_LoadIncident</sys_name>
+        <sys_id>b3a4f023c3f6c3105f00fc84e40131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JAKCS_OnChangeIncident_Email</sys_name>
         <sys_overrides/>
         <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
         <sys_policy/>
         <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
-        <sys_update_name>sys_script_client_5701a0a7c336c3105f00fc84e40131f6</sys_update_name>
+        <sys_update_name>sys_script_client_b3a4f023c3f6c3105f00fc84e40131c8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-25 07:20:59</sys_updated_on>
+        <sys_updated_on>2026-08-25 06:56:28</sys_updated_on>
         <table>incident</table>
-        <type>onLoad</type>
+        <type>onChange</type>
         <ui_type>10</ui_type>
         <view/>
     </sys_script_client>
