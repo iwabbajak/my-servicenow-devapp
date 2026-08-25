@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Onload on Problem Table</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>JAKCS_OnLoadProblem</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+
+// Glide user API Methods
+//Console log on the Browser
+ console.log('first name', g_user.firstName);
+console.log('last name', g_user.lastName);
+console.log('has roles', g_user.hasRoles());
+console.log('user userID', g_user.userID);
+console.log('logged in user name', g_user.userName);
+console.log('user full name',g_user.getFullName());
+console.log('users client data',g_user.getClientData());
+
+// Info Message on the Left Corner
+g_form.addInfoMessage('first name'+g_user.firstName);
+g_form.addInfoMessage('last name'+g_user.lastName);
+g_form.addInfoMessage('has roles'+ g_user.hasRoles());
+g_form.addInfoMessage('user userID'+g_user.userID);
+g_form.addInfoMessage('logged in user name'+ g_user.userName);
+g_form.addInfoMessage('user full name'+ g_user.getFullName());
+g_form.addInfoMessage('users client data'+g_user.getClientData());
+
+// Glide form API methods
+g_form.setValue('short_description', 'short description changes by client script');
+g_form.setValue('caller_id','62826bf03710200044e0bfc8bcbe5df1', 'Abel Tuter');
+g_form.clearValue('caller_id');
+g_form.setReadOnly('description', true);
+g_form.setMandatory('close_notes', true);
+g_form.setDisplay('work_notes', false);
+g_form.addInfoMessage('Your request has been auto-populated based on your profile.');
+g_form.addErrorMessage('Priority 1 incidents require an attached VIP approval form.');
+g_form.showFieldMsg('assigned_to', 'High impact requires manager notification', 'error');
+g_form.showFieldMsg('urgency', 'Urgency reset to low by auto-policy', 'info');
+//g_form.clearMessages();
+// g_form.hideFieldMsg('impact');
+// g_form.hideFieldMsg('impact', true);
+g_form.addOption('urgency', '10', '4-Emergency', 4);
+// g_form.removeOption('priority', '5');
+g_form.clearOptions('category');
+
+// To hide Related List Section:
+ 
+// g_form.hideRelatedLists();
+g_form.showRelatedLists();
+// g_form.hideRelatedList('task_sla.task');
+// g_form.hideRelatedList('task_ci.task');
+g_form.hideRelatedList('task_ci');
+
+g_form.disableAttachments();
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 06:00:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6318e067c376c3105f00fc84e40131a8</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>JAKCS_OnLoadProblem</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name>sys_script_client_6318e067c376c3105f00fc84e40131a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 06:14:22</sys_updated_on>
+        <table>problem</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
