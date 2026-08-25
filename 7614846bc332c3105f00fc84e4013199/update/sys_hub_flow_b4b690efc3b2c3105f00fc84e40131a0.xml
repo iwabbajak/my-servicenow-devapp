@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1427000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When a Problem is created, create a Problem task, wait for the Problem to be resolved, then resolve the incident associated</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>jakfd_problem_resolve_all_incidents</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Problem Record","reference":"problem","reference_display":"Problem","type":"reference","base_type":"reference","usedInstances":{"d378482d-4f86-4d3a-902f-cb53c80ca523":["problem"],"bc8d460b-c071-4f9a-936a-0a0996eac20c":["record"],"1c7cdb2d-c939-48fd-9f1a-4a0483167274":["conditions"]},"attributes":{}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Problem Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"problem","column_name":"description","usedInstances":{"3033ceda-988f-4ebe-833d-60054db5e6f9":["condition"]}},{"name":"Created_1.current.state","label":"Trigger - Record Created➛Problem Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"problem","column_name":"state","choices":[{"label":"New","used":false,"image":"","reference":false,"rawLabel":"New","selected":false,"missing":false,"value":"101","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Assess","used":false,"image":"","reference":false,"rawLabel":"Assess","selected":false,"missing":false,"value":"102","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Root Cause Analysis","used":false,"image":"","reference":false,"rawLabel":"Root Cause Analysis","selected":false,"missing":false,"value":"103","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Fix in Progress","used":false,"image":"","reference":false,"rawLabel":"Fix in Progress","selected":false,"missing":false,"value":"104","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Resolved","used":false,"image":"","reference":false,"rawLabel":"Resolved","selected":false,"missing":false,"value":"106","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Closed","used":false,"image":"","reference":false,"rawLabel":"Closed","selected":false,"missing":false,"value":"107","parameters":{"name":"problem","dependent_values":[""]}}],"usedInstances":{"be2fe295-ea35-43b0-8c10-18a63c2907ea":["condition"]}},{"name":"1c7cdb2d-c939-48fd-9f1a-4a0483167274.Records","label":"3 - Look Up Records➛Incident Records","reference":"incident","reference_display":"Incident","type":"records","base_type":"records","usedInstances":{"053cb40f-b5b3-44f3-9d1c-69c70fd9c40a":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"053cb40f-b5b3-44f3-9d1c-69c70fd9c40a.item","label":"4 - For Each➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"65c58433-d6ec-489a-b0e7-1d30911b07df":["record"],"bf0e08d4-eb03-459e-b0f5-a02890f5dccb":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master_snapshot>5d2cd0ebc3f2c3105f00fc84e40131ba</master_snapshot>
+        <master_snapshot_digest/>
+        <name>JAKFD_Problem_Resolve_All_Incidents</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>a92c14ebc3f2c3105f00fc84e4013147</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:42:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b4b690efc3b2c3105f00fc84e40131a0</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>JAKFD_Problem_Resolve_All_Incidents</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name>sys_hub_flow_b4b690efc3b2c3105f00fc84e40131a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>352c14ebc3f2c3105f00fc84e40131b3</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="problem">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a92c14ebc3f2c3105f00fc84e4013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <table>problem</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>b4b690efc3b2c3105f00fc84e40131a0</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>a52c14ebc3f2c3105f00fc84e4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <trigger display_value="">a92c14ebc3f2c3105f00fc84e4013147</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b4b690efc3b2c3105f00fc84e40131a0^sys_idNOT INa52c14ebc3f2c3105f00fc84e4013148"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b4b690efc3b2c3105f00fc84e40131a0^sys_idNOT INfcb690efc3b2c3105f00fc84e40131a0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b4b690efc3b2c3105f00fc84e40131a0</id>
+        <name>JAKFD_Problem_Resolve_All_Incidents</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:42:52</sys_created_on>
+        <sys_id>fcb690efc3b2c3105f00fc84e40131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 04:42:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=fcb690efc3b2c3105f00fc84e40131a0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b4b690efc3b2c3105f00fc84e40131a0^sys_idNOT IN73b65023c3f2c3105f00fc84e4013160,c4c65023c3f2c3105f00fc84e4013176"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</model>
+        <model_id>b4b690efc3b2c3105f00fc84e40131a0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b4b690efc3b2c3105f00fc84e40131a0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:43:05</sys_created_on>
+        <sys_id>73b65023c3f2c3105f00fc84e4013160</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73b65023c3f2c3105f00fc84e4013160"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</model>
+        <model_id>b4b690efc3b2c3105f00fc84e40131a0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b4b690efc3b2c3105f00fc84e40131a0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:43:05</sys_created_on>
+        <sys_id>c4c65023c3f2c3105f00fc84e4013176</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c4c65023c3f2c3105f00fc84e4013176"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b4b690efc3b2c3105f00fc84e40131a0^sys_idNOT IN3bb65023c3f2c3105f00fc84e4013157"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:43:04</sys_created_on>
+        <sys_id>3bb65023c3f2c3105f00fc84e4013157</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuthxnLetk0UDpEnreNuHIBUoibSJ0qQrUcp6F/n3HepmWRfHFzl1XgKIpDlnDs+cIfP0XWfIxUy/0qfIZVjv6ZRLHHDEpqslhmGphh2OFmpugbiPpAhW+pUMItzTSSAWU7xYMiRhMUEshEER+DjQr8yeHiMW4cdVeOvDTvD7ZJtsTz2bhu9lIGBgASM+DWGv1V/ZxB/FhDenzA8w16+ennv6EgWwk1RRvlemJMB2NnLS7lPwVIHwiIdGFjY827QtyzCsy77pXtiuafk2woYB66qEVEDLBl7WGeOvEnMf+wUZNcoCjPwHzlbFijkwntKzQF9D+g12vzTUOoIhKw+nc8Wnk3GUDntzQT38sJRU8HQkxZlOChYt+H2KX7GLCYqYzNmFkSiE/fBSQVYgMkTkcS5eJnnAz5Qn2WWTTHiIFV9IyoC6kcShOgpCGRyKk3ITiihI0E9uxg+Ta+fvT9PxbzcTZ3LzOJ3cjqc31/prkpfzX6R2TBFmWJw0nddCEp8pZuoAebRwAU1PD72ALuUnT9I4l95rby3nseA+TVipSdrLp8JNSefZb9O0YbSq2itFzJX9z82fdVWng4cpelzGnij64gIhH6MWRbukpOgyJw2gZQM95by3aTsb2UXcfcP4n+Sdedah6l4IH7Pr9XY6TM5moHfKl5FUbL0gLkNHCgf5vlPiUS0FTG/JPc2trvm31R5EHLZwihOqaz4hsmD0joaQwBNUbM5WsiXMk7tsy0nENQFHCX80LwqALKnlHkhuF2iWcUweMcOeLMmCfAnLX7/TMKR8VkJdBE1YqcUswoG8tDylNHZ4ZPDnLgu+TnpcIbNS+IdXfX56ScWbJiEuJpYxVPVuGrZLTGNoDBDxbcPwrFLF1yG2YpcVoZyk8ver+zCRKNtBkFXiM/BGuUZ2Ele8qcycBCWczF7G3UAzO4JmKWgVm7T38slCrOnw9aZmt6XW8e0B+TGCX/i72qVasIMvEiZewKIP8EQXef/OAhFxv2pSak+Ncm29Qvsp4+/nDv2RiABvB7C54pyccU17LlzEVyfzRJuY7gj3sQFWaIMLuoPRyPWQRcjwYogts+KJa3CNiD+EF76hwbhJxG2+2CinuEmFezjiEQBr7rg3wON9MZNroyumcx/D/17mmDsANXCYcriaDc4Y9XE+160H1ELH66rvygfusqRUdHI58gbmcOgN4R0ELkD62EVm3xqg0fDCvhxUXKAGbxt02cDWu7yOwlWYAGlxiC/p1Hn9I+CUUg6xlKpx7d/POdx4k9+gNEipp6pj0RKjEYF2L/gvt+t12iOGVpk8kbtq7LugUAernRaGK+S8drOA0L/C+EZodSNtYeXsnmQVkcSbuZ7oSYb7l4MRsZuNh4yajGcNsR382V9EdqybuLUCm24ku5ZB3FhNrVeIA4RdEU/5brHl8tMVKWbnpFinI8U++sKVV2jrO/QQsB+osSW3jWO6m4qJHUHKln4tNJjQIIhGiZb9xxL7mrvS5BwDpQxu1hBQU9GP9fJyb6lDKRT8vkDSu3qtx8Gwll2rzq99VaTwHi9o7A/RYGC33J1H1Rd0E8w3sjj7ZrZ3rcRNpbe1o+23b3XPxp5WEvKmTnbsVp1m3dyyjsu6sWm9lfXx7Wjb+78BxZk2mucfAaqqfuMfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b4b690efc3b2c3105f00fc84e40131a0^sys_idNOT IN0b79506fc3b2c3105f00fc84e4013148,24d81427c3f2c3105f00fc84e40131f4,514a54e7c3f2c3105f00fc84e401317d,7bd9d4a7c3f2c3105f00fc84e40131cf,faebd8abc3f2c3105f00fc84e4013174"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:55:02</sys_created_on>
+        <sys_id>0b79506fc3b2c3105f00fc84e4013148</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+        <ui_id>bc8d460b-c071-4f9a-936a-0a0996eac20c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XW4/aOBTHv0qVZ8zGiROceauAUUfqdiqG7T50q8ixjwdLudBcpqWj+e51ggMJMBRNQV1Vfcyxffw/l19O8vHRUsK6skjAgTKC6Qg7to1t33c5w1Hk+jyyIyDWwEpZAnpnDjzLhX5+YHFVGx4fxzmwEkSIh7zKc0jLpye9LlSxjNnqg9mmLXyhYqHXrauPnwbWkuXaYwm5dfW4s1SulhDGLIJYH5xkvEq001c3E+3jVLXt6Vkrd1d+fYd+FsZ7qGqjXqr14IEFX0tIBejbJIsLGFgJSwUrs3xlXZV5pQ06aHGbxqvNjoVKy3WgCftaqG/avevU+yToyLhJwuYxNAlqc5MpDrfLUmXp2lKyKG4Tl8VVkr5bR1CnFiSr4rKT2qrQ/mBZS65FrBXKu0X2Zdbed63SJjijNs44izdPrCxzFVUlFHU1KjXX2Xl7sAAQQ5OvhC2XKr0Pl3n2oBrHWmYyvI/1w1DG2Retp1D36ZDxOqahTh4bXmv7pDF/YLmqA/xbu9GHB+bOvYpIFesWCZtkhEVW5U0eZ9Px7WwS/vt6Pn4znYWz6d18djOeTyeNo39S9bmCm6ZTpMQu9n2Ese0igiMfBRQ8ZIPHiOcQ3/Md66mpSvi5qhOyzq/JZNgUY31500B6a8FztSxf66gewOTvadBi5B1tTLbtw47PLUo6l9qa7MPzfrPwMobm9W2v3q1vO1Vp7/Azyg1FPZuByDkOkbGcQhG1fw1FRtGZMOrV4OIU9SqiinDdtSYZjdpdVBxMA0oiF7kR8RAJpETUpgQRYDb3HDEimP8QlR8CcvzNLbdtxrNUqDrmogNIUepB819l267QZ/c52Vt/GS7j7t2n6j54+FAwhpmezTDjnmvwENv+RdCcdfT0cnlxZnoV6bEBgvqRZ1MEklJE3BFFAXYc5PtMYEy4kPY5x4gtjnWb7HyNlSqBrCpDGbP7Dif2Phot8y8cILqqf10bF6dqbA9P0+bVZ7Q+K95wEWVZDCzdQkHONkjI7zFIurW4OBTbcvSI4JxRPRYYClwOiPgRR1RyiVyIPOl6EY1G9k9PC368x4L9VhJVzpqabVk456/I1vup+g4cfV6yIaApWtduQPD+gND/Mdlm6FIYLPS5CVsVdb00dl0w9qq0wwdgNvKi+neDIeIEGLGAOCjwYQREUt9lwU/zQfHR/pP7zVbwBYgqhsvwsSlpC8gJAtuzd1tlz2s2gOSdewwb/hn/NnY/nXiSdkUcIqWj/v9MTLdAF58c3Sr12XAc7ArgCAv9SUUc30HUJSM0CmhkE90XkQsvZuPTd7RoIg7TEgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0b79506fc3b2c3105f00fc84e4013148"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:52:08</sys_created_on>
+        <sys_id>24d81427c3f2c3105f00fc84e40131f4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+        <ui_id>d378482d-4f86-4d3a-902f-cb53c80ca523</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUS2/bMAz+K4HOhmHHXdDmVqzIbe2wFb10rSBbdCJMljw90mZB/nspS063rAGCocAw30RS34MUfb8lgpM5mZVQfLgoZ01VVtW0KKbnZ2U9q+pyyisGcEYyolgHWOlYLYEOh4ysmfQh2BuN0Y46Zr9jmAvbS7a5S9nPMTu5jdlmJSQ3oMj8/iEjPTOI5cCQ+fYg5TY9UMlqkAhyG3gn15H3VM2/XT7iIbAcxrThQVCREXh2oDggX8ukhYx0THHmtNmQuTMeAwYYv1Fys69YCeUQkITaZyt+Ivp5EepaQGsNxNz+SFO3YrhZadHATe+EVjEyCEtJLX2nrqOJ0GdomZdu7DNGvEU86IPkICIpar+u9NOXkXAh1OAuJaVumNyfmHNG1N6BDfMAHBsC0Y71vVBLinNei+EyaunypcRD3kr9hKRWLFXOmiA8xw6xfIHxqyF8x4wILj4hDF7eDe7pDx94o4+kmEbTWGAbI3p3iXBrSOJ22fhYORQXRwdf1q+DHt6n/fOhfvNFUfHt9iMOzwGnZd54g81xu90jOhm40Ucsu/ROT5agwITa8RUfvPH3A/7L9YAO5TiYREHZyZ0aARYCJLdvtG7cj0RA14kg7Uj5XjtSzorh+zebEnX+Z4vyyz/ryMo8vAB9dhHA4QUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=24d81427c3f2c3105f00fc84e40131f4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>053cb40f-b5b3-44f3-9d1c-69c70fd9c40a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:58:28</sys_created_on>
+        <sys_id>514a54e7c3f2c3105f00fc84e401317d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+        <ui_id>65c58433-d6ec-489a-b0e7-1d30911b07df</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXW/aMBT9K1GeQ+SQwApvlRBSH0YnNvWl6yLHvgFLjp0lDi1D/PddJw7QdutQhTRNWt7u9f045/jE9ztfcH/qJ8BJNInGLI7ieEjI8CqJsnGcRUMeU4DID3xFC8DKCpiuOMYbKhub2O3IKGZZQvJBNsriQZLk8WDCIzYYT9gHkvMJSwgNhYFiv8c+LupS0u2da8cMWwvJK1D+9P4h8Eta4SYDlT/dvTgy2xJSSTOQ2DjTrClAGe9mhjPOZdF3L3saL2nZHRhzNz0VNolHFk9EAh+eDCgOuC6nsobAL6ji1Ohq609N1WCiAspvldweKtZCmY5pQZ9q8QPnJ8TW5YDUmFPhEKZOoV4cLRjclkZo1WUMzWSvnJZNoRYdBast5LSR5kTbpsZ5UFrIFkSHMP+81o/Lft9cqJadQys1o/IQUWMqkTUGansdIKEVpaBlKdQqLSu9EW0zQinClcQgzKV+xJ21WKmQMos7RIFoOMf8rE3f0UpYEh9xDDbvW/Lp98bu7Wg4wGnLuSWctheFpTWrRGmucfAGHMx94Gycjd4yAJsc7/tk5tHKQjHR6vTKpTfHk/e59Yvd5y26fedifdb8G+zOr89yzq6ji9n16i/Z1SH6x/z6J5eS4ZvP1MlNt8asTxzKpEaFmObwtSEk5kuotdwA97Kth+QQY/Gtq1EaNeiKrhujPVfpfeqqvIU9f230yy945/8CBcIy4HXAgrOV6wfMBUhe/0LK/odxC9KNW3B44y/210Rj0n7/n/oLPvUPPwGXB+fVswgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=514a54e7c3f2c3105f00fc84e401317d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:56:44</sys_created_on>
+        <sys_id>7bd9d4a7c3f2c3105f00fc84e40131cf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+        <ui_id>1c7cdb2d-c939-48fd-9f1a-4a0483167274</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VXTU/jMBD9K1XOUZWQUtjeEAiJAyAB4sIiy7Gd1lrHyTpOS6n633ccx0lpC4RSsXD0fL4Zv5k4DwuPU2/kHSeDIMDh4fFREERREAyHEcFhHEdDEgfxIPZ8T+KUgaXGsWBwnGJRmjOXhFMmNYgoL3KB5/e15qLVkAkXVDHpjR4efS/HCmJpprzRYk2l5zlDAsdMQIA7k6p3ZfL6nWG+cN6EbRK4I5I2dKaowRL4HnvSTFIGqRIsCuZ7KZYU60zNG4limF5L0QomHEoceZ4xfir4M4Q/DoxdwqAswqyuOaK6S1ZMJhkn7DrXPJNWYoFaZSbKVF7ZAkx/WYJLoV1/QVIWEI/lBrMBUSNKbifZ7MYlPOeyKq9Wioxg0Zyw1orHpWaFuQsmWAqBUIrznMsxylU25ZUzYEn7YwGHfiKyGSQt+Fj2MTHA+9Ai3D8H+VklvseKmyouIQw4AyAu4LaRbXqRlarqyhQRURaVQmFZ2FjesuoV+lsalLbquj5kWwQGBVE81yfgMGV1KUu/E5MPg5YSJJOUm5zFCp2hZACZIk5/lxCALhancOOaURT2Samgo3q53OR6V7fdBuF0FWnXKrc6byu9HokXsnokwr2NBMD9T0OhVfn9ZuI9ltuC36E6OXqTBIftfReZ0sh2boXrmzTemaHnnAn6YlV3AOecrw3ZevH8Nbw1QROTY21nH/z4nf1JeiYU2b5wKbisPm0QENJ8Y94Gby+vX2s8qK6/ZW0lwwXZZC/u6az3vPuWre7V8bcDSOd4C4h6dxblFuBuv7rwNXWjvVE3OvgYdYE4D4sGfdO1LQ12LyNzdc7+2djjdXsg0YpDuHxsqH+6W87wozkPTM612Yw+NJyrzLKas1cItud31xcPsW8STsC1zofssKIZp2Om2+zOimZ6hsWfbfqaXc0MVeV9+g03eHP2hmE7ZzADSLECrmr1ERfCY2NzPYS+Fe+2HS6kZuOqeV0hOs9L/NS7aTBuBV6vCN7kqDk92OP76ys+b67xW6fH9f9H/LTsSuHHf1LpPKZSDwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7bd9d4a7c3f2c3105f00fc84e40131cf"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>053cb40f-b5b3-44f3-9d1c-69c70fd9c40a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:05:40</sys_created_on>
+        <sys_id>faebd8abc3f2c3105f00fc84e4013174</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+        <ui_id>bf0e08d4-eb03-459e-b0f5-a02890f5dccb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8HPjpFjJ2vyNgiBPqyFbvSlK0aWrhOBLHuynDYL+e+7kuUkTbsulMAYTG+60j0fVwc9bAPBg1mQAifxNJ6wJE6SESGjqzTOJ0kej3hCAeIgDBQtAW9qYJXmuF9T2drCdkvGCctTUgzzcZ4M07RIhlMes+Fkyj6Rgk9ZSmgkDJS7HfZx0dSSbu59O1bYSkiuQQWzh8cwqKlGJgM6mG1PjsymhkzSHCQ2zivWlqDM4HqOGOe66LvvehuntiwH7rlHz4Qt4pHVE5MwgGcDigPSFVQ2EAYlVZyaSm+CmdEtFjRQfqvkZn9jJZTpnJb0uRE/ET8l9l4BaI35Key3mZ9QP5xKMLitjahUVzE0l/3kKtmW6qazYGcLBW2lOZpt2yAe1FayFdEpLL6uqqe7nm8hlHPn1cqKUbnfUWO0yFsDjX0OkOCGUtK6FmqZ1bpaC9eMUspoKXETFbJ6Qs5GLFVEmdUd4YBotMD63JXvqRbWxBeEweadM5/9aC1vZ8MLzpxnZzhzD4VXG6ZFbT4j8Bq8zF3oY5yP3wsAmx7e+wjzEGWhmHBzepXS68PJx9L6zfINbjq+c7W+aP6Ndp/XFzUf1/HF4nr1l+LqFf1jef1TSsno3W/q6KVdMJujhDaGGvjeEpLwyeuUnpx+MKlQIqaBQYcanq25B1gIkLx5w0QfVU+QrT3B/ne9WF7jCXHr/yd7wU/28RcQeDZ9LQgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=faebd8abc3f2c3105f00fc84e4013174"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b4b690efc3b2c3105f00fc84e40131a0^sys_idNOT IN001ad4e3c3f2c3105f00fc84e401318a"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">412cd0ebc3f2c3105f00fc84e4013152</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:57:33</sys_created_on>
+        <sys_id>001ad4e3c3f2c3105f00fc84e401318a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+        <ui_id>053cb40f-b5b3-44f3-9d1c-69c70fd9c40a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TTW/bMAz9Lzonhr+QxLkVGAr00BXoil6GwqAlOhEqS5okJ/UM//dRsZMOPQ07WXwkH98T5ZGZPtg++Bdz5708aLb/+bZiUkeMziOTgu1ZVom2ytKKF/mmyNM035VZsymaLBcFoNiwFdPQIVXKgJ2n8ASqj/E4ZnzLRZOLNa+Kal3uWrGu2gzWJaTlrsg223xbJs/IjRN+mqhVSG8VDK//z8CPUgmHixkLjrQFdGw/fkmFwWKtoEFFgxYG6v9Xz9fOh8X0lzuI7BS6Gy99ooo8XTH8CKgF0qAWlMcV60ALCMYNbB9cT4BDEE9aDbeKo9SB6Fis/fDyN3FnaRoLWyRHHOfkLayXi5xhfjSS45MN0ugZCdCopYcb1Xf6+yw/rgBb6FW4roCQ3hMf2qg5qlgktT+O5vx8HXgv9cXfklSGg7pFEIKTTR/QxzWgwo6I6g6slfpQW2dO8tJMWrrkoChIWmXONDQ+ywR4FJ7QFUFyT/i3C/wKTkYXj0RDzdPFff2rj3NnH4viejZNBZ47acMd0Z1wETe9xfc6M/n5YQjk0tPAl4g9XP+GmBhoyZL/DZ2Ne49SP7HpD4ysKwlXAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b4b690efc3b2c3105f00fc84e40131a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:43:05</sys_created_on>
+        <sys_id>ccc65023c3f2c3105f00fc84e4013172</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 04:43:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b4b690efc3b2c3105f00fc84e40131a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 04:43:05</sys_created_on>
+        <sys_id>ccc65023c3f2c3105f00fc84e401317c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 04:43:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b4b690efc3b2c3105f00fc84e40131a0"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When a Problem is created, create a Problem task, wait for the Problem to be resolved, then resolve the incident associated</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>jakfd_problem_resolve_all_incidents</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Problem Record","reference":"problem","reference_display":"Problem","type":"reference","base_type":"reference","usedInstances":{"d378482d-4f86-4d3a-902f-cb53c80ca523":["problem"],"bc8d460b-c071-4f9a-936a-0a0996eac20c":["record"],"1c7cdb2d-c939-48fd-9f1a-4a0483167274":["conditions"]},"attributes":{}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Problem Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"problem","column_name":"description","usedInstances":{"3033ceda-988f-4ebe-833d-60054db5e6f9":["condition"]}},{"name":"Created_1.current.state","label":"Trigger - Record Created➛Problem Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"problem","column_name":"state","choices":[{"label":"New","used":false,"image":"","reference":false,"rawLabel":"New","selected":false,"missing":false,"value":"101","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Assess","used":false,"image":"","reference":false,"rawLabel":"Assess","selected":false,"missing":false,"value":"102","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Root Cause Analysis","used":false,"image":"","reference":false,"rawLabel":"Root Cause Analysis","selected":false,"missing":false,"value":"103","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Fix in Progress","used":false,"image":"","reference":false,"rawLabel":"Fix in Progress","selected":false,"missing":false,"value":"104","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Resolved","used":false,"image":"","reference":false,"rawLabel":"Resolved","selected":false,"missing":false,"value":"106","parameters":{"name":"problem","dependent_values":[""]}},{"label":"Closed","used":false,"image":"","reference":false,"rawLabel":"Closed","selected":false,"missing":false,"value":"107","parameters":{"name":"problem","dependent_values":[""]}}],"usedInstances":{"be2fe295-ea35-43b0-8c10-18a63c2907ea":["condition"]}},{"name":"1c7cdb2d-c939-48fd-9f1a-4a0483167274.Records","label":"3 - Look Up Records➛Incident Records","reference":"incident","reference_display":"Incident","type":"records","base_type":"records","usedInstances":{"053cb40f-b5b3-44f3-9d1c-69c70fd9c40a":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"053cb40f-b5b3-44f3-9d1c-69c70fd9c40a.item","label":"4 - For Each➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"65c58433-d6ec-489a-b0e7-1d30911b07df":["record"],"bf0e08d4-eb03-459e-b0f5-a02890f5dccb":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master>true</master>
+        <name>JAKFD_Problem_Resolve_All_Incidents</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="JAKFD_Problem_Resolve_All_Incidents">b4b690efc3b2c3105f00fc84e40131a0</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5d2cd0ebc3f2c3105f00fc84e40131ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5d2cd0ebc3f2c3105f00fc84e40131ba^sys_idNOT IN192cd0ebc3f2c3105f00fc84e40131bb"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5d2cd0ebc3f2c3105f00fc84e40131ba</id>
+        <name>JAKFD_Problem_Resolve_All_Incidents</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:39</sys_created_on>
+        <sys_id>192cd0ebc3f2c3105f00fc84e40131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=192cd0ebc3f2c3105f00fc84e40131bb"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=5d2cd0ebc3f2c3105f00fc84e40131ba^sys_idNOT IN992cd0ebc3f2c3105f00fc84e40131d1,9d2cd0ebc3f2c3105f00fc84e40131bc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="JAKFD_Problem_Resolve_All_Incidents">5d2cd0ebc3f2c3105f00fc84e40131ba</model>
+        <model_id>5d2cd0ebc3f2c3105f00fc84e40131ba</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_5d2cd0ebc3f2c3105f00fc84e40131ba</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>992cd0ebc3f2c3105f00fc84e40131d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=992cd0ebc3f2c3105f00fc84e40131d1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="JAKFD_Problem_Resolve_All_Incidents">5d2cd0ebc3f2c3105f00fc84e40131ba</model>
+        <model_id>5d2cd0ebc3f2c3105f00fc84e40131ba</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_5d2cd0ebc3f2c3105f00fc84e40131ba</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:39</sys_created_on>
+        <sys_id>9d2cd0ebc3f2c3105f00fc84e40131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9d2cd0ebc3f2c3105f00fc84e40131bc"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5d2cd0ebc3f2c3105f00fc84e40131ba^sys_idNOT IN592c14ebc3f2c3105f00fc84e4013107"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">5d2cd0ebc3f2c3105f00fc84e40131ba</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>592c14ebc3f2c3105f00fc84e4013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuthxnLetk0UDpEnreNuHIBUoibSJ0qQrUcp6F/n3HepmWRfHFzl1XgKIpDlnDs+cIfP0XWfIxUy/0qfIZVjv6ZRLHHDEpqslhmGphh2OFmpugbiPpAhW+pUMItzTSSAWU7xYMiRhMUEshEER+DjQr8yeHiMW4cdVeOvDTvD7ZJtsTz2bhu9lIGBgASM+DWGv1V/ZxB/FhDenzA8w16+ennv6EgWwk1RRvlemJMB2NnLS7lPwVIHwiIdGFjY827QtyzCsy77pXtiuafk2woYB66qEVEDLBl7WGeOvEnMf+wUZNcoCjPwHzlbFijkwntKzQF9D+g12vzTUOoIhKw+nc8Wnk3GUDntzQT38sJRU8HQkxZlOChYt+H2KX7GLCYqYzNmFkSiE/fBSQVYgMkTkcS5eJnnAz5Qn2WWTTHiIFV9IyoC6kcShOgpCGRyKk3ITiihI0E9uxg+Ta+fvT9PxbzcTZ3LzOJ3cjqc31/prkpfzX6R2TBFmWJw0nddCEp8pZuoAebRwAU1PD72ALuUnT9I4l95rby3nseA+TVipSdrLp8JNSefZb9O0YbSq2itFzJX9z82fdVWng4cpelzGnij64gIhH6MWRbukpOgyJw2gZQM95by3aTsb2UXcfcP4n+Sdedah6l4IH7Pr9XY6TM5moHfKl5FUbL0gLkNHCgf5vlPiUS0FTG/JPc2trvm31R5EHLZwihOqaz4hsmD0joaQwBNUbM5WsiXMk7tsy0nENQFHCX80LwqALKnlHkhuF2iWcUweMcOeLMmCfAnLX7/TMKR8VkJdBE1YqcUswoG8tDylNHZ4ZPDnLgu+TnpcIbNS+IdXfX56ScWbJiEuJpYxVPVuGrZLTGNoDBDxbcPwrFLF1yG2YpcVoZyk8ver+zCRKNtBkFXiM/BGuUZ2Ele8qcycBCWczF7G3UAzO4JmKWgVm7T38slCrOnw9aZmt6XW8e0B+TGCX/i72qVasIMvEiZewKIP8EQXef/OAhFxv2pSak+Ncm29Qvsp4+/nDv2RiABvB7C54pyccU17LlzEVyfzRJuY7gj3sQFWaIMLuoPRyPWQRcjwYogts+KJa3CNiD+EF76hwbhJxG2+2CinuEmFezjiEQBr7rg3wON9MZNroyumcx/D/17mmDsANXCYcriaDc4Y9XE+160H1ELH66rvygfusqRUdHI58gbmcOgN4R0ELkD62EVm3xqg0fDCvhxUXKAGbxt02cDWu7yOwlWYAGlxiC/p1Hn9I+CUUg6xlKpx7d/POdx4k9+gNEipp6pj0RKjEYF2L/gvt+t12iOGVpk8kbtq7LugUAernRaGK+S8drOA0L/C+EZodSNtYeXsnmQVkcSbuZ7oSYb7l4MRsZuNh4yajGcNsR382V9EdqybuLUCm24ku5ZB3FhNrVeIA4RdEU/5brHl8tMVKWbnpFinI8U++sKVV2jrO/QQsB+osSW3jWO6m4qJHUHKln4tNJjQIIhGiZb9xxL7mrvS5BwDpQxu1hBQU9GP9fJyb6lDKRT8vkDSu3qtx8Gwll2rzq99VaTwHi9o7A/RYGC33J1H1Rd0E8w3sjj7ZrZ3rcRNpbe1o+23b3XPxp5WEvKmTnbsVp1m3dyyjsu6sWm9lfXx7Wjb+78BxZk2mucfAaqqfuMfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=5d2cd0ebc3f2c3105f00fc84e40131ba^sys_idNOT IN152cd0ebc3f2c3105f00fc84e40131fe,512c14ebc3f2c3105f00fc84e4013102,9d2c14ebc3f2c3105f00fc84e4013103,d12c14ebc3f2c3105f00fc84e4013100,dd2c14ebc3f2c3105f00fc84e4013104"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">5d2cd0ebc3f2c3105f00fc84e40131ba</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>152cd0ebc3f2c3105f00fc84e40131fe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <ui_id>d378482d-4f86-4d3a-902f-cb53c80ca523</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUTU/bQBD9K9GeLcuOaQS5oaCcKFQF5UKpNfaOk1XXa3c/AmmU/95Zrx2iQNQiccG3na997+08P2yZ4GzKJikmXy7SSZmlWTZOkvH5WVpMsiId8wwQz1jEFNRIlRYKiXl3iNgapPPBVjcUrXML5heFuTCthM2iz34L2dF9yJYrIblGxaYPjxFrQdMsi5pNt0ep/0UmoUBJpfce2gmkdtO+Gbs+7B3dhESjuceTRAyfLSqOBKQCaTBiNSgOttEbNrXaUUAj8FslN/uKlVCWBjJf+2zEH7r2PPF1FRKzEkNuf8x7sUK4ugILdzS5tE73peWqESWaoAnHCpy0s8NYKLhtrWhUaOlo9t2NdLW6CZKw/YDhbSjiDIHA1vP0yHsa1d2qefo+oJwL1UnSJ2VTgtyfwFotCmc9ni1DemoalNfQtkItc9qNteiaCUsdLyUd4ko2T3SpEUsVQ+mBxyQrxHOKX3XhBWjhWXylMdS8i5jZmJkEY164kIj5b+eRBGY9hzzI4FtKLVp7SRessYe7i4aV55hcnFystHhZpG7Lzet1/+GSJOPb7Yx2wCLP07h0muSyu91P4tbdTcxC2aWzzWiJCrWvHbxw5JSPG/xOk/1bi8Fkc4GSmzfEGRyGNTGymAexjlzWJ0eLPtk7Lf0op6WTpPs+kd8CuU9vt4M/6wnjPf4FBSA7u20GAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=152cd0ebc3f2c3105f00fc84e40131fe"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">5d2cd0ebc3f2c3105f00fc84e40131ba</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>512c14ebc3f2c3105f00fc84e4013102</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <ui_id>1c7cdb2d-c939-48fd-9f1a-4a0483167274</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9laBnE+wmTbt5W1IKhV6gLX3pFiFLciJWkb2SnDQN+fcdWb6RuN0EUmjZR81FOjNzjiw/r5FgaIzOk2EYkuj0/CwMB4MwHI0GlERxPBjROIyHMQqQInMOkZbEksNyQWTu1kJRwbiyYGLCZJKsnkrPVeOhMyGZ5gqNn18ClBENe1mu0Xi95doXjCQxlxD6WKLZAmdXWb3Ehc/brttpvVvvSDVzUMIA8VfLFeOAISHS8ADNiWLEpnpVWzQn7E7JxjATUOEYIRf8asQbnHseuriEQ1WUe1+9xGWTvDm5IJY8WJ1Tm+sylM5SQbnx/WA8Ibm0k7bNB9xlVqTKp/iyfXYq87m69e1A9QbVTMCSGwDBM1eoQ16WkTzM0uV9hfJSqKInpVOmlMh6RazVIs6tw7NGXPI5bITnJMuEmuJMpwtRJAOWeX8qYdFPZLqEQ42Yqj6hDngf+kr6l2C/KMxPRAtXxQ1sA8kASEhgCPYjNGmui1YuMJW5KRyaKOP3QpsAmZWZSGJMUzm0HP/JHW7fh7Ji7JvmUqgWmf0JWyx4Wdwm2EsPp2FDOZoqJhwK0xIFNAFgz7Fgv3LYgK3XEyCO5QxHfZpr6LHdbHYVs2/aMeVU1FLJadIupqvAUlg7tuuuDUphRUcTFtTxnaQFh389ZR2uFd+CfwiGnn1IstOGTybVFvtethSzK4aDeb4HhIrnd46ZvXj1HqqS5ongknV9Py6dY+v7cfJ/fj++JMkBEMN+ekJJoYrHAAD9LPaHH1+xP7Z4VtCr4X5hI4buaoD0bNp7O1gJe8CplPAAZ/cePZ4OiNV9X1Bm+66vjKUABkcTwODkOAJY12XWjezoefX+c9Os4t9cPNmOBwq2EqJNl8AOOjM69MyTza6ABwcpuE0277l4h3NHfii+o8jgM6+AGaSW52GvX7wUbMptc3oVxVK7JPJ3l79kHK4GVZT3CY/O4YeyHUWNREEpWHMDw2u/OiN4Hu3eIVHgzYddIXtgqdpxQ1579zWYToTlNQJK59NiNu175Kq2liQfHvHB+GW/pNWwOjVYzexb/KsdTwgvfwGcVbNgjxAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=512c14ebc3f2c3105f00fc84e4013102"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">5d2cd0ebc3f2c3105f00fc84e40131ba</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>053cb40f-b5b3-44f3-9d1c-69c70fd9c40a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>9d2c14ebc3f2c3105f00fc84e4013103</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <ui_id>65c58433-d6ec-489a-b0e7-1d30911b07df</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5HPbeU0aZf2hqiQkFhYwYoLsJFjT8CSY2djp9Ct+t93EjttRRELEhe0uXk+PO+9vElu10QKMicpCBrP4ilP4iQZUzo+SuN8muTxWCQMICYDolkJWFkDN7XA85Kppg2s13SS8DylxTCf5MkwTYtkOBMxH05n/BstxIynlI2kg3KzwT4hbaXY6ia0Y4Q/SiVq0GR+ez8gFatxkoOazNcvUu+FqlgOCkuveqwvsbtV1Z6F4U0J2mWyD56HzkXIRGcLzGBTCyemAwLPDrQABFIwZWFASqYFc6ZekbmrGwzUwMSlVqttxaPUzhMt2bOVf3ByStu6ApAZDyJsj1kQyIeLBXPsGm/mrqm3ehnJwXpNBBSsUe5kP+YLLisnjfYtjuWq7zaqKfWFV4RsL9h7H41FEFC1PFvknlZx/WiernqQp1J3kgSKynCmtifmXC3zxrVw1gQUdBqXrKqkfsiq2ixl14xQytGDwsOoUOYJZ1r5oEeMt7hHqCobnWJ80YVvWC1bEt/xGmzeDIhd2RPFrN1RQQ2z302LxBMLFLJOhU6CrHNC28xrWbljHLWEAHwzCMuQT95yGJ/tDLV3524hpOayU+7A62e7zMc8/w5Eved/dm/6dYTB9gex8/3e6MInguknn2b6o69k+kDjy7v+X16n4ze/pntO6uxt93zOlUHNuBFw11CaiCuwRi1BRPkqQrqIuvzla7RBVXzRceNMFCqjH74qumjzh+vy+QM+tnXv0KbfulMJSthXxOpXDkpk5iDz4r1Yu5CMbkJy+7/5tN2Lp7R7vtAG/je/nfu/1GrcbIUJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9d2c14ebc3f2c3105f00fc84e4013103"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">5d2cd0ebc3f2c3105f00fc84e40131ba</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>d12c14ebc3f2c3105f00fc84e4013100</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <ui_id>bc8d460b-c071-4f9a-936a-0a0996eac20c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XXW+bSBSG/0rFtcfLwICH3FW2o0bKNivH273oVmiYj3ikAVw+0nqt/PcOMBhsHDfZOpEi9ZIzH37Pe87jA5+3lmTWhYUCyjFBEE+gY9vQ9n2XEhhFrk8jO+LIGlkJibnemXGaZkw/3xNVVoHtdppxUnAWwjEts4wnxcODXmcyXyuy+WS26QhdScX0unXx+cvIWpNM31jwzLrYHiw9VZIiEVd666LVdKix2KyrZ5bSMta6QtkGr83JmVl5dzXTK/pQJQeOLP694AnjWocgKucjKyYJI0WabayLIit1QOfMbhK12e1YyaRo8ozJ91z+p3/Ydap9guvEqPFg9xgaf5qwmJGC3OqbaVFmO7tSSXneWMK4IKUqpv1Ys+FmXcg0aY4UJFLt6VSVcfKxMcTaXdArR5lrEXxd5Vkpb9ISt6v026IVeSmT2hGTokopUbsnUhSZjMqikrO1Srk8ZnYTPm63kEqXP6xFh3laZrVJi/n0ZjEL/3m/nH6YL8LF/Ha5uJou59UJrnh9dUzWa5nchessvZe1Qp1vPL5T+mEsVPpNJ5bLu2RMaGXOWJeOjC91fFaHP5FMVj/6p75GH65U/p3IryW/qhtPCOhC3wcQ2i5AMPJBgLkHbO4R5DnI93zHehhZ+SafKpLnnce6uOHXsrKocdx4G9bladKsO7Q6TDO5Lt5reffcOPowamH0TnY+6Rq9d2cHpDZFR+Mhgn/tFp5J4s/1tCQu6wY8rs/AOIhd98+++9gsGBSd0yiaSMdi08RHUMT2G0LRpPXrLO55vY/intsyD5uGNKLrW1+LNwfiAKPIBW6EPIACIQC2MQKIE5t6DpsgSP8Hbz+l7PR8EV0X0zRhssor71GWF3rm/Vvatsv02SFsg/WzTj/RY27al3dMsgFvELs+doEBzz3XDES2/ZbQO9cU3DN7n7w9u1+FMM6wH3k2BlxgDJA7wSCAjgN8nzAIEWXCftmJZrNT3Sx6r5eFjHlaFqFQ5K5Hmz0ErP2Peh5XT1DScjVP6r9Io+hRiYauKE0VJ8nhTNPt9MelUWrQQs+caafYekNknW2odU4fTLS+16/CFaUE6xFFQOBSDpAfUYAFFcDlkSdcL8LRxH6ByUVP93AwbFVWZqSuYkfUGb7QnqCjZWnWCXhcmiGprs1h/Hp4kcHJ+43TL+E0sPvgk61beCmmVvrcjGzyqis0w0PKOCQTL6q+wghATgABCZADAp9POBLYd0nwApRheLK7xbCVc7rirFT8vJQ9QUdL2W0n4HFphrKu0fcBW/TihjD/bIThwcsgjZO+uGO89bJ6k9yJW04yurqUXFX1NF9jj9DYL8s+iP3CvM50cxzoMk4BZPrVETm+A7CLJmAS4MhGuvUil5+Ruy8/AP7p+r6MFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d12c14ebc3f2c3105f00fc84e4013100"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">5d2cd0ebc3f2c3105f00fc84e40131ba</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>053cb40f-b5b3-44f3-9d1c-69c70fd9c40a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>dd2c14ebc3f2c3105f00fc84e4013104</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <ui_id>bf0e08d4-eb03-459e-b0f5-a02890f5dccb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+WUwW7iMBCGXwX5DMghgS3cVkVIlbqt1K566VbRxJ6AJcfJ2g4ti3j3dRInIKi6VOoFbW4z47H/+f3Fz1siOJmRCDkNpsGEhUEYjigdXUVBMgmTYMRDQAxInyjI0K3UyHLNXbwGWVaJ7ZaOQ5ZENB0k4yQcRFEaDqY8YIPJlH2jKZ+yiMJQWMx2O9fHhSkkbJ58u8uwlZBcoyKz55c+KUC7kyxqMtselc6VKiFB6ZY+tFqPtdtNUcU8Z2WGysaiTd76zrmv9G7mruKaKjkB7RN8s6g4OiEpSIN9koHiYHO9ITOrS5fQCPxeyU23YiWUbQbN4M2IP+7kiFbrUnSTMW9CF8beoCadzsHCo9uZ2VJ3fuWCoWk84ZhCKe31Ya5ZcF9YkaumxUIi2+5clpm6axwh3QYH91EaJwKLas5KeTNW+rjKXx9akQuhakv8iDJnILsIrNUiKW0lZ0tQYu1xBkUh1DIudL4WdbOTkg2X0gXDVOav7kwjlmoIrNI9dK7CcOHy8zr9BFpUQ/xw27jmXZ+YjbmWYMx+FOdh/LuslDSD+RHi2oXagrgmoWpmWhT2uztqjV74ru9/hmT8EWFsugfqYM/9DyEUE7VzJ6zf7CufY/4MRS3zP+ubfl+hx/4kd3vY27trCh768ZdBf3VJ0PsxLp76f7FORx++pgck1XibA86NBYu/SkpDPjll/aj6Od7PUNXyvhAouXlHZgs7Zk6WxbiRfQS8L/aefLF76b+M+mBC6++C2P9vHvyXv1Q7rsz/CAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dd2c14ebc3f2c3105f00fc84e4013104"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5d2cd0ebc3f2c3105f00fc84e40131ba^sys_idNOT INdd2cd0ebc3f2c3105f00fc84e40131fb"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">412cd0ebc3f2c3105f00fc84e4013152</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="JAKFD_Problem_Resolve_All_Incidents">5d2cd0ebc3f2c3105f00fc84e40131ba</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>dd2cd0ebc3f2c3105f00fc84e40131fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <ui_id>053cb40f-b5b3-44f3-9d1c-69c70fd9c40a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TTW+jMBD9Lz4TxJeSkFvVqlKl7lZKq15WFRpsk1g1NmubpCziv+84JrTqabUnmDdf7z2Gkejedb2zL/rGWnFQZPfrLSJCeQzfRyIY2ZG0ZE2ZJiXNs3WeJUm2LdJ6nddpxnLgbE0ioqDlWCkcby2GJ5C9j8cxpRvK6oytaJmXq2LbsFXZpLAqICm2ebreZJsi3nOqDbPThK1M2E7C8Pr/E+hRSGb4LKYDg9wcN2Q3fkv9qzgJNZdY+jCr+ybWDZ0PTaAwA49zz35B8eFJZElE+IfjinFc34C0PCItKAZOm4HsnOkRMBzYk5LDUnEUyuE44ms/rPiDG9Mk8YUNR0GUh+QSVrOPAW7uwMEzjqauN3MpPWpBuQ1WMN5AL93tVywUPHVOaBVaHNTy2q1l36qfwQmyDLh+NkR6iyR454V66rOO5vmoz/sry3uhLqbMSakpyCUC54yoe+f5jIRL3uKgqoWuE+pQdUafxKUZubTxQWIQN1Kfcak/5RioJx6jrxDfI353gV/BCK/iB47B5ikidrC3Eqz91IImVr97zyQomzVUwQbfQo3o3A0uOPGZ7vTmrz7MXjylwiKFF489XP8pnxjwggT9Cp21effkP7HpL7oIUYWdAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5d2cd0ebc3f2c3105f00fc84e40131ba</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>912cd0ebc3f2c3105f00fc84e40131ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5d2cd0ebc3f2c3105f00fc84e40131ba</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_id>912cd0ebc3f2c3105f00fc84e40131f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5d2cd0ebc3f2c3105f00fc84e40131ba"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b4b690efc3b2c3105f00fc84e40131a0</sys_id>
+        <latest_snapshot>5d2cd0ebc3f2c3105f00fc84e40131ba</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b4b690efc3b2c3105f00fc84e40131a0^sys_idNOT INad2c14ebc3f2c3105f00fc84e4013148"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>b4b690efc3b2c3105f00fc84e40131a0</plan_id>
+        <snapshot>5d2cd0ebc3f2c3105f00fc84e40131ba</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 05:06:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad2c14ebc3f2c3105f00fc84e4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 05:06:40</sys_updated_on>
+        <trigger display_value="">a92c14ebc3f2c3105f00fc84e4013147</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b4b690efc3b2c3105f00fc84e40131a0"/>
+</record_update>
