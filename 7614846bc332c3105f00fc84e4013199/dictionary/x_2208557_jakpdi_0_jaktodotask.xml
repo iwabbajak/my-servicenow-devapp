@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f6ff78b7c33a47105f00fc84e4013136" label="JAKTodoTask" max_length="40" name="x_2208557_jakpdi_0_jaktodotask" type="collection">
+        <element choice="1" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="5-Cancelled" value="5"/>
+                <element inactive_on_update="false" label="2-In Progress" value="2"/>
+                <element inactive_on_update="false" label="4-Completed" value="4"/>
+                <element inactive_on_update="false" label="3-Waiting" value="3"/>
+                <element inactive_on_update="false" label="1-New" value="1"/>
+            </choice>
+        </element>
+        <element choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1-Critical" value="1"/>
+                <element inactive_on_update="false" label="4-Low" value="4"/>
+                <element inactive_on_update="false" label="2-High" value="2"/>
+                <element inactive_on_update="false" label="3-Medium" value="3"/>
+            </choice>
+        </element>
+        <element label="Description" mandatory="true" max_length="4000" name="description" type="string"/>
+        <element display="true" label="Due Date" mandatory="true" max_length="40" name="due_date" type="glide_date"/>
+        <element label="Title" mandatory="true" max_length="200" name="title" type="string"/>
+    </element>
+</database>
