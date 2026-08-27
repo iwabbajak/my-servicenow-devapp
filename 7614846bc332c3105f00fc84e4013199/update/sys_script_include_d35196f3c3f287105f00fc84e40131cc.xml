@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_2208557_jakpdi_0.JAKScriptInclude_Utils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Jak script include Utilities</description>
+        <mobile_callable>false</mobile_callable>
+        <name>JAKScriptInclude_Utils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var JAKScriptInclude_Utils = Class.create();
+JAKScriptInclude_Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getUserName: function() {
+        var userSysId = this.getParameter('sysparm_userSysId');
+        var grUser = new GlideRecord('sys_user');
+        if (grUser.get(userSysId)) {
+            var result = {
+                first_name: grUser.getValue('first_name'),
+                last_name: grUser.getValue('last_name'),
+                email: grUser.getValue('email'),
+                department: grUser.department.getDisplayValue()
+            };
+            return JSON.stringify(result);
+        }
+        return '';
+    },
+	getCISupportGroup: function(){
+		var ciSysId = this.getParameter('sysparm_ciSysId');
+		gs.info('CI Sys ID = ' + ciSysId);
+		var grCI = new GlideRecord('cmdb_ci_computer');
+
+		if(grCI.get(ciSysId)){
+			gs.info('Support Group = ' + grCI.getValue('support_group'));
+			return grCI.getValue('support_group');
+		}
+		return '';
+	},
+	getCICount: function(){
+		var CntCiSysId = this.getParameter('sysparm_CICountSysId');
+		var grIncident = new GlideAggregate('incident');
+		grIncident.addQuery('cmdb_ci',CntCiSysId);
+		grIncident.addAggregate('COUNT');
+		grIncident.query();
+		if (grIncident.next()) {
+			return grIncident.getAggregate('COUNT');
+		}
+		return '0';
+	},
+    type: 'JAKScriptInclude_Utils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 08:26:38</sys_created_on>
+        <sys_id>d35196f3c3f287105f00fc84e40131cc</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>JAKScriptInclude_Utils</sys_name>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name>sys_script_include_d35196f3c3f287105f00fc84e40131cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 09:22:05</sys_updated_on>
+    </sys_script_include>
+</record_update>
