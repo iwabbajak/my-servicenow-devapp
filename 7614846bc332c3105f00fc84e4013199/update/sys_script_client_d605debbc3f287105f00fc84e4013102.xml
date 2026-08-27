@@ -28,7 +28,9 @@
 	gb.addParam('sysparm_name', 'getCICount');
     gb.addParam('sysparm_CICountSysId', g_form.getValue('cmdb_ci'));
 	gb.getXMLAnswer(function(response) {
-		g_form.addInfoMessage(response);
+		//g_form.addInfoMessage(response);
+		// g_form.setValue('cmdb_ci', 'Count of similar CI : ' + response);
+		g_form.showFieldMsg('cmdb_ci', 'Count of similar CI : ' + response, 'info');
 	});
 
 }
@@ -39,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d605debbc3f287105f00fc84e4013102</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>JAKSI_ScriptInclude_OnLoad</sys_name>
         <sys_overrides/>
         <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
@@ -47,7 +49,7 @@
         <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
         <sys_update_name>sys_script_client_d605debbc3f287105f00fc84e4013102</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-26 09:20:31</sys_updated_on>
+        <sys_updated_on>2026-08-27 05:20:59</sys_updated_on>
         <table>incident</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
