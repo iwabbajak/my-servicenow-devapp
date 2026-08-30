@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="JakWorkSpace">16e2902cc3c3cb105f00fc84e4013106</app_config>
+        <description/>
+        <extension_point/>
+        <fields>table,sysId</fields>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>JakStdRecord</name>
+        <optional_parameters>query,extraParams,views,selectedTab</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>jakstdrecord</route_type>
+        <screen_type display_value="JakStdRecord">4184dc20c307cb105f00fc84e40131b6</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 07:07:15</sys_created_on>
+        <sys_id>0184dc20c307cb105f00fc84e40131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JakStdRecord</sys_name>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name>sys_ux_app_route_0184dc20c307cb105f00fc84e40131bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 07:07:15</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=0184dc20c307cb105f00fc84e40131bc"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</application>
+        <file_path/>
+        <instance_id>f80f3191ebb8ae185a2dfceacad0cd7f</instance_id>
+        <instance_name>dev321456</instance_name>
+        <name>sys_ux_app_route_0184dc20c307cb105f00fc84e40131bc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="JakWorkSpace">16e2902cc3c3cb105f00fc84e4013106</app_config><description/><extension_point/><fields>table,sysId</fields><icon/><interoperable>false</interoperable><name>JakStdRecord</name><optional_parameters>query,extraParams,views,selectedTab</optional_parameters><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>jakstdrecord</route_type><screen_type display_value="JakStdRecord">4184dc20c307cb105f00fc84e40131b6</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-28 07:07:15</sys_created_on><sys_id>0184dc20c307cb105f00fc84e40131bc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>JakStdRecord</sys_name><sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package><sys_policy/><sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope><sys_update_name>sys_ux_app_route_0184dc20c307cb105f00fc84e40131bc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-28 07:07:15</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=0184dc20c307cb105f00fc84e40131bc"/></record_update>]]></payload>
+        <payload_hash>-560445764</payload_hash>
+        <record_name>JakStdRecord</record_name>
+        <reverted_from/>
+        <source>391352c4c3c30b105f00fc84e401310f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 07:07:15</sys_created_on>
+        <sys_id>8184dc20c307cb105f00fc84e40131c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a04731b7960000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 07:07:15</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>0184dc20a807cb107afc388d51f7fbc2</update_guid>
+        <update_guid_history>0184dc20a807cb107afc388d51f7fbc2:-560445764</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-28 07:08:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>08261e6746fa4b9081f6c95207c13dc1</sys_id>
+        <sys_metadata>0184dc20c307cb105f00fc84e40131bc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JakStdRecord</sys_name>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_scope_delete display_value="">2b3bce6a6ee94e419fb2df78ca889c61</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_0184dc20c307cb105f00fc84e40131bc</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_0184dc20c307cb105f00fc84e40131bc">8184dc20c307cb105f00fc84e40131c3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-28 07:08:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
