@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">791da0bdc3c747505f00fc84e4013155</canvas>
+        <component display_value="Pie">96abe7e38d8790718022c5630a92176c</component>
+        <component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":true,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":true,"showRegisterValue":true,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":true,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"JAK Todo Task","sourceType":"table","tableOrViewName":"x_2208557_jakpdi_0_jaktodotask","filterQuery":"status!=4^ORstatus!=5","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzIyMDg1NTdfamFrcGRpXzBfamFrdG9kb3Rhc2sxNzg4MjQyNzQzODc1","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"JakTodo Task Incomplete","headingLevel":2,"description":"Incomplete Todo Task","showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzIyMDg1NTdfamFrcGRpXzBfamFrdG9kb3Rhc2sxNzg4MjQyNzQzODc1","id":"ZEdGaWJHVjRYekl5TURnMU5UZGZhbUZyY0dScFh6QmZhbUZyZEc5a2IzUmhjMnN4TnpnNE1qUXlOelF6T0RjMTE3ODgyNDI3NDY0NjU=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzIyMDg1NTdfamFrcGRpXzBfamFrdG9kb3Rhc2sxNzg4MjQyNzQzODc1","groupByField":"status","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"gib9plw0","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","sharedContext":null,"colors":{}}</component_props>
+        <h>32</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-01 06:07:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>861da0bdc3c747505f00fc84e4013165</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name>par_dashboard_widget_861da0bdc3c747505f00fc84e4013165</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-01 06:07:29</sys_updated_on>
+        <visualization/>
+        <w>18</w>
+        <widget_props/>
+        <x>10</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

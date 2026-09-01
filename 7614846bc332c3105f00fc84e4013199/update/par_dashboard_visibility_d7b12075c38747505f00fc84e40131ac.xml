@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="JakTest Analytics Dashboard">dbb16c35c38747505f00fc84e4013197</dashboard>
+        <experience display_value="Platform Analytics">08c73d60537101100834ddeeff7b1287</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-01 05:17:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d7b12075c38747505f00fc84e40131ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name>par_dashboard_visibility_d7b12075c38747505f00fc84e40131ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-01 05:17:26</sys_updated_on>
+    </par_dashboard_visibility>
+</record_update>

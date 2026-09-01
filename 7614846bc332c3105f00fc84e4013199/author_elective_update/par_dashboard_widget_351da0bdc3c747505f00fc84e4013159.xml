@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">791da0bdc3c747505f00fc84e4013155</canvas>
+        <component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component>
+        <component_props>{"variant":"header-primary","label":"Jak Todo Task","wontWrap":false,"hasNoMargin":false,"level":"1","align":"start"}</component_props>
+        <h>3</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-01 06:07:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>351da0bdc3c747505f00fc84e4013159</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name>par_dashboard_widget_351da0bdc3c747505f00fc84e4013159</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-01 06:07:02</sys_updated_on>
+        <visualization/>
+        <w>10</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</application>
+        <file_path/>
+        <instance_id>f80f3191ebb8ae185a2dfceacad0cd7f</instance_id>
+        <instance_name>dev321456</instance_name>
+        <name>par_dashboard_widget_351da0bdc3c747505f00fc84e4013159</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">791da0bdc3c747505f00fc84e4013155</canvas><component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component><component_props>{"variant":"header-primary","label":"Jak Todo Task","wontWrap":false,"hasNoMargin":false,"level":"1","align":"start"}</component_props><h>3</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-01 06:07:02</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>351da0bdc3c747505f00fc84e4013159</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package><sys_policy/><sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope><sys_update_name>par_dashboard_widget_351da0bdc3c747505f00fc84e4013159</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 06:07:02</sys_updated_on><visualization/><w>10</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-521492866</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>391352c4c3c30b105f00fc84e401310f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-01 06:07:02</sys_created_on>
+        <sys_id>0a1da0bdc3c747505f00fc84e401315c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a05b94055a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-01 06:07:02</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>c61da0bdcec747505dd61200ab86e75b</update_guid>
+        <update_guid_history>c61da0bdcec747505dd61200ab86e75b:-521492866</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">4a1da0bdc3c747505f00fc84e401316c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-01 06:07:02</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>0a7903d3549e44c89e6f46e08e47d4a4</sys_id>
+        <sys_metadata>351da0bdc3c747505f00fc84e4013159</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_scope_delete display_value="">2b3bce6a6ee94e419fb2df78ca889c61</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_351da0bdc3c747505f00fc84e4013159</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_351da0bdc3c747505f00fc84e4013159">0a1da0bdc3c747505f00fc84e401315c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-01 06:07:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

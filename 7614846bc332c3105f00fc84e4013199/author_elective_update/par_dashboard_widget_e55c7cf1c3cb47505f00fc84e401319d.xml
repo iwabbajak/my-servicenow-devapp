@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">1a297839c38b47505f00fc84e4013135</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"auto","headingPosition":null,"sparklineStyle":"area","scoreIcon":"","iconStyle":"background","showScoreDate":true,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":false,"wrapElements":false,"rangesConfig":{},"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"allowRealTime":true,"allowTotalValue":true,"indicatorType":"1","isScriptedIndicator":false,"allowMultiElementsAggregation":false,"aggregateType":1,"label":"Number of incidents breaching SLA","sourceType":"indicator","uuid":{"indicator":"75926cf14370021097aac6ecbab8f242","breakdowns":[]},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yNzU5MjZjZjE0MzcwMDIxMDk3YWFjNmVjYmFiOGYyNDIxNzg4MjQ2NzkyNjQw","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Number of Incidents Breaching SLA","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"aW5kaWNhdG9yNzU5MjZjZjE0MzcwMDIxMDk3YWFjNmVjYmFiOGYyNDIxNzg4MjQ2NzkyNjQw","id":"YVc1a2FXTmhkRzl5TnpVNU1qWmpaakUwTXpjd01ESXhNRGszWVdGak5tVmpZbUZpT0dZeU5ESXhOemc0TWpRMk56a3lOalF3MTc4ODI0Njc5NjcwOA==","aggregateIndicator":"","frequency":10,"numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":true,"showChangePercentage":true,"showTarget":true,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":true,"showSparkline":true,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"l9zkigyy","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":true,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","sharedContext":null,"colors":{}}</component_props>
+        <h>13</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-01 07:13:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e55c7cf1c3cb47505f00fc84e401319d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_update_name>par_dashboard_widget_e55c7cf1c3cb47505f00fc84e401319d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-01 07:28:59</sys_updated_on>
+        <visualization/>
+        <w>10</w>
+        <widget_props/>
+        <x>21</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</application>
+        <file_path/>
+        <instance_id>f80f3191ebb8ae185a2dfceacad0cd7f</instance_id>
+        <instance_name>dev321456</instance_name>
+        <name>par_dashboard_widget_e55c7cf1c3cb47505f00fc84e401319d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">1a297839c38b47505f00fc84e4013135</canvas><component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component><component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"auto","headingPosition":null,"sparklineStyle":"area","scoreIcon":"","iconStyle":"background","showScoreDate":true,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":false,"wrapElements":false,"rangesConfig":{},"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"allowRealTime":true,"allowTotalValue":true,"indicatorType":"1","isScriptedIndicator":false,"allowMultiElementsAggregation":false,"aggregateType":1,"label":"Number of incidents breaching SLA","sourceType":"indicator","uuid":{"indicator":"75926cf14370021097aac6ecbab8f242","breakdowns":[]},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yNzU5MjZjZjE0MzcwMDIxMDk3YWFjNmVjYmFiOGYyNDIxNzg4MjQ2NzkyNjQw","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Number of Incidents Breaching SLA","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"aW5kaWNhdG9yNzU5MjZjZjE0MzcwMDIxMDk3YWFjNmVjYmFiOGYyNDIxNzg4MjQ2NzkyNjQw","id":"YVc1a2FXTmhkRzl5TnpVNU1qWmpaakUwTXpjd01ESXhNRGszWVdGak5tVmpZbUZpT0dZeU5ESXhOemc0TWpRMk56a3lOalF3MTc4ODI0Njc5NjcwOA==","aggregateIndicator":"","frequency":10,"numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":true,"showChangePercentage":true,"showTarget":true,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":true,"showSparkline":true,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"l9zkigyy","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":true,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","sharedContext":null,"colors":{}}</component_props><h>13</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-01 07:13:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e55c7cf1c3cb47505f00fc84e401319d</sys_id><sys_mod_count>5</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package><sys_policy/><sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope><sys_update_name>par_dashboard_widget_e55c7cf1c3cb47505f00fc84e401319d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-01 07:28:59</sys_updated_on><visualization/><w>10</w><widget_props/><x>21</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>964669328</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>391352c4c3c30b105f00fc84e401310f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-01 07:28:59</sys_created_on>
+        <sys_id>92df383dc3cb47505f00fc84e401315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a05bdf0c610000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-01 07:28:59</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>dedf383df1cb475032c0090444fcd358</update_guid>
+        <update_guid_history>dedf383df1cb475032c0090444fcd358:964669328,7c9eb87902cb475060ecdc0155438646:2009361617,14ddbcf57ecb4750ae94e6478d41f8fa:1733839343,251db4b52dcb475026919834255f1f40:2009361617,bd9cfc3530cb4750a18a440ba8e1ddd7:1733839343,a55c7cf168cb4750e51878c9a000339f:-67811087</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">de118dfdc3cb47505f00fc84e4013105</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-01 07:34:27</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>1c5b0f2734dd491ea88b036145ecd384</sys_id>
+        <sys_metadata>e55c7cf1c3cb47505f00fc84e401319d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JakPDI-ServiceNowApp" source="x_2208557_jakpdi_0">7614846bc332c3105f00fc84e4013199</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="JakPDI-ServiceNowApp">7614846bc332c3105f00fc84e4013199</sys_scope>
+        <sys_scope_delete display_value="">2b3bce6a6ee94e419fb2df78ca889c61</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_e55c7cf1c3cb47505f00fc84e401319d</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_e55c7cf1c3cb47505f00fc84e401319d">92df383dc3cb47505f00fc84e401315a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-01 07:34:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
